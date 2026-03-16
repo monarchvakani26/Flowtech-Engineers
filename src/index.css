@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #0f172a; /* Dark Blue */
+  --secondary: #3b82f6; /* Light Blue */
+  --accent: #f97316; /* Orange */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+}
