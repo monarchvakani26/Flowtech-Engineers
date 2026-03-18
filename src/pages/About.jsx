@@ -1,9 +1,14 @@
 import { motion } from 'framer-motion';
 import { Target, Compass, Award, ShieldCheck, Factory } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const About = () => {
   return (
     <div className="w-full">
+      <SEO 
+        title="About Flowtech Engineers | Industrial Instrumentation Company" 
+        description="Learn about our foundational history, mission, and vision. We are committed to supplying precise and durable flow measurement equipment worldwide." 
+      />
       {/* Hero Banner */}
       <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center bg-primary overflow-hidden">
         <div className="absolute inset-0">

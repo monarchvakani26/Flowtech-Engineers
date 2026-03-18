@@ -1,10 +1,15 @@
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import EnquiryForm from '../components/EnquiryForm';
+import SEO from '../components/SEO';
 
 const Contact = () => {
   return (
     <div className="w-full bg-slate-50 pb-20">
+      <SEO 
+        title="Contact Flowtech Engineers | Request a Quote" 
+        description="Get in touch with our engineering team for quick quotes or technical specification requests regarding Flowtech measurement solutions." 
+      />
       {/* Header Banner */}
       <section className="bg-primary/95 pt-24 pb-32 px-4 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.8) 1px, transparent 0)', backgroundSize: '30px 30px' }}></div>

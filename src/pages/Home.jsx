@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
+import SEO from '../components/SEO';
 import { ShieldCheck, Settings, Award, CheckCircle, Factory, Droplets, Zap, Activity } from 'lucide-react';
 
 const Home = () => {
@@ -25,6 +26,10 @@ const Home = () => {
 
   return (
     <div className="w-full">
+      <SEO 
+        title="Flowtech Engineers | Precision Flow Measurement Solutions" 
+        description="High quality flow measurement instruments designed for demanding industrial applications. Engineered for accuracy, built for durability." 
+      />
       {/* Hero Section */}
       <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center bg-primary overflow-hidden">
         {/* Abstract Background Design */}

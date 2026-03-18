@@ -1,10 +1,15 @@
 import { motion } from 'framer-motion';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
+import SEO from '../components/SEO';
 
 const Products = () => {
   return (
     <div className="w-full bg-slate-50 min-h-[calc(100vh-64px)]">
+      <SEO 
+        title="Industrial Instrumentation Catalog | Flowtech Engineers" 
+        description="Explore our complete catalog of precision flow measurement instruments including Rotameters, Chlorination Systems, and Orifice Plates." 
+      />
       {/* Header Banner */}
       <section className="bg-primary/95 py-20 px-4 relative overflow-hidden border-b-4 border-accent">
         <div className="absolute inset-0 opacity-20">

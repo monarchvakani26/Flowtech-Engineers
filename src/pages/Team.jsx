@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Linkedin, Mail } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Team = () => {
   const teamMembers = [
@@ -35,6 +36,10 @@ const Team = () => {
 
   return (
     <div className="w-full bg-slate-50 min-h-screen">
+      <SEO 
+        title="Our Engineering Team | Flowtech Engineers" 
+        description="Meet the technical minds and operations directors behind Flowtech Engineers. Decades of combined experience in industrial flow measurement." 
+      />
       {/* Header Banner */}
       <section className="bg-primary pt-24 pb-32 px-4 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">

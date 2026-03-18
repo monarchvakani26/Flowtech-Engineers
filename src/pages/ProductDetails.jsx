@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, CheckCircle2, ChevronRight, Activity } from 'lucide-react';
 import { products } from '../data/products';
 import EnquiryForm from '../components/EnquiryForm';
+import SEO from '../components/SEO';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -22,6 +23,10 @@ const ProductDetails = () => {
 
   return (
     <div className="w-full bg-slate-50 pb-24">
+      <SEO 
+        title={`${product.name} | Flowtech Engineers`} 
+        description={product.description} 
+      />
       {/* Breadcrumb Navigation */}
       <div className="bg-white border-b border-slate-200 py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex items-center text-sm text-slate-500">

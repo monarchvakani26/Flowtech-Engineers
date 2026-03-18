@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flow-tech-ten.vercel.app/sitemap.xml
