@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Droplets } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +17,20 @@ const Navbar = () => {
 
   const isActive = (path) => location.pathname === path;
 
+  // Prevent scrolling when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   return (
-    <nav className="fixed w-full bg-white shadow-md z-50">
+    <nav className="fixed w-full bg-white/90 backdrop-blur-lg shadow-sm z-50 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -65,36 +78,57 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Nav */}
-      {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
-          <div className="px-2 pt-2 pb-5 space-y-1 sm:px-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.path}
-                onClick={() => setIsOpen(false)}
-                className={`block px-3 py-3 rounded-md text-base font-medium ${
-                  isActive(link.path)
-                    ? 'bg-blue-50 text-secondary border-l-4 border-accent'
-                    : 'text-slate-600 hover:bg-slate-50 hover:text-primary'
-                }`}
+      {/* Premium Glassmorphism Mobile Nav Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden fixed inset-0 top-16 bg-white/95 backdrop-blur-xl z-40 overflow-y-auto"
+          >
+            <div className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)] p-6 space-y-8">
+              {navLinks.map((link, i) => (
+                <motion.div
+                  key={link.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.1 + 0.1, duration: 0.4 }}
+                  className="w-full"
+                >
+                  <Link
+                    to={link.path}
+                    onClick={() => setIsOpen(false)}
+                    className={`block w-full text-center py-4 rounded-2xl text-2xl font-semibold tracking-wide transition-all ${
+                      isActive(link.path)
+                        ? 'bg-secondary/10 text-secondary'
+                        : 'text-slate-800 hover:bg-slate-50'
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                </motion.div>
+              ))}
+              
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.6, duration: 0.4 }}
+                className="w-full pt-6 border-t border-slate-200/50"
               >
-                {link.name}
-              </Link>
-            ))}
-            <div className="px-3 pt-3">
-              <Link
-                to="/contact"
-                onClick={() => setIsOpen(false)}
-                className="w-full flex justify-center bg-accent hover:bg-orange-600 text-white px-4 py-3 rounded-md font-medium transition-colors duration-200"
-              >
-                Send Enquiry
-              </Link>
+                <Link
+                  to="/contact"
+                  onClick={() => setIsOpen(false)}
+                  className="w-full block text-center bg-gradient-to-r from-accent to-orange-500 shadow-lg shadow-orange-500/30 text-white px-6 py-5 rounded-2xl text-xl font-bold uppercase tracking-wider"
+                >
+                  Request a Quote
+                </Link>
+              </motion.div>
             </div>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

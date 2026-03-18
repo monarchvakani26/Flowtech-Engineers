@@ -45,29 +45,29 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto"
+            className="max-w-4xl mx-auto flex flex-col items-center"
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-white/10 text-accent font-medium tracking-wide text-sm mb-6 border border-white/10 backdrop-blur-md">
+            <span className="inline-block py-1.5 px-4 rounded-full bg-white/10 text-accent font-semibold tracking-wider text-xs sm:text-sm mb-6 sm:mb-8 border border-white/10 backdrop-blur-md shadow-lg">
               INDUSTRIAL INSTRUMENTATION EXPERTS
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
-              Precision <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">Flow Measurement</span> Solutions
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-6 sm:mb-8 leading-[1.1] tracking-tight drop-shadow-lg">
+              Precision <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400 drop-shadow-sm">Flow<br className="sm:hidden" /> Measurement</span> Solutions
             </h1>
-            <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md px-4">
               High quality flow measurement instruments designed for demanding industrial applications. Engineered for accuracy, built for durability.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full sm:w-auto px-4">
               <Link
                 to="/products"
-                className="w-full sm:w-auto px-8 py-4 bg-secondary hover:bg-blue-600 text-white rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg shadow-secondary/30 transform hover:-translate-y-1"
+                className="w-full sm:w-auto px-8 py-4 sm:py-5 bg-gradient-to-r from-secondary to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white rounded-xl font-bold text-lg transition-all duration-300 shadow-xl shadow-secondary/30 transform hover:-translate-y-1"
               >
-                View Products
+                View Catalog
               </Link>
               <Link
                 to="/contact"
-                className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-lg font-semibold text-lg transition-all duration-300 backdrop-blur-sm transform hover:-translate-y-1"
+                className="w-full sm:w-auto px-8 py-4 sm:py-5 bg-white/10 hover:bg-white/20 text-white border-2 border-white/20 rounded-xl font-bold text-lg transition-all duration-300 backdrop-blur-md transform hover:-translate-y-1"
               >
-                Send Enquiry
+                Request Quote
               </Link>
             </div>
           </motion.div>
@@ -164,19 +164,27 @@ const Home = () => {
             </p>
           </div>
 
-          <motion.div 
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"
-          >
-            {featuredProducts.map(product => (
-              <motion.div key={product.id} variants={itemVariants}>
-                <ProductCard product={product} />
-              </motion.div>
-            ))}
-          </motion.div>
+          {/* Horizontal scroll container for Mobile, Grid for Desktop */}
+          <div className="-mx-4 sm:mx-0 px-4 sm:px-0">
+            <motion.div 
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-50px" }}
+              className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 overflow-x-auto snap-x snap-mandatory pb-8 pt-4 hide-scrollbar sm:pb-0 sm:pt-0"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {featuredProducts.map(product => (
+                <motion.div 
+                  key={product.id} 
+                  variants={itemVariants}
+                  className="min-w-[85vw] sm:min-w-0 snap-center snap-always"
+                >
+                  <ProductCard product={product} />
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
 
           <div className="text-center">
             <Link

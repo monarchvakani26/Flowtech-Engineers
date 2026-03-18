@@ -33,14 +33,14 @@ const Footer = () => {
               Quick Links
               <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-accent rounded"></span>
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {['Home', 'About', 'Products', 'Team', 'Contact'].map((item) => (
                 <li key={item}>
                   <Link 
                     to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                    className="flex items-center text-sm hover:text-secondary hover:translate-x-1 transition-all duration-200"
+                    className="flex items-center text-base py-1 hover:text-secondary hover:translate-x-1 transition-all duration-200"
                   >
-                    <ChevronRight size={16} className="mr-2 text-accent" />
+                    <ChevronRight size={18} className="mr-2 text-accent" />
                     {item}
                   </Link>
                 </li>
@@ -54,14 +54,14 @@ const Footer = () => {
               Our Products
               <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-accent rounded"></span>
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {quickProducts.map((product) => (
                 <li key={product.id}>
                   <Link 
                     to={`/products/${product.id}`}
-                    className="flex items-center text-sm hover:text-secondary hover:translate-x-1 transition-all duration-200 line-clamp-1"
+                    className="flex items-center text-base py-1 hover:text-secondary hover:translate-x-1 transition-all duration-200 line-clamp-1"
                   >
-                    <ChevronRight size={16} className="mr-2 text-accent" />
+                    <ChevronRight size={18} className="mr-2 text-accent" />
                     {product.name}
                   </Link>
                 </li>
@@ -75,18 +75,18 @@ const Footer = () => {
               Contact Info
               <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-accent rounded"></span>
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-5">
               <li className="flex items-start">
-                <MapPin size={20} className="mr-3 text-accent shrink-0 mt-0.5" />
-                <span className="text-sm">123 Industrial Estate, Phase 1, GIDC, Mumbai - 400001, India</span>
+                <MapPin size={22} className="mr-4 text-accent shrink-0 mt-0.5" />
+                <span className="text-base leading-relaxed">123 Industrial Estate, Phase 1, GIDC, Mumbai - 400001, India</span>
               </li>
-              <li className="flex items-center">
-                <Phone size={20} className="mr-3 text-accent shrink-0" />
-                <span className="text-sm">+91 98765 43210</span>
+              <li className="flex items-center pt-1">
+                <Phone size={22} className="mr-4 text-accent shrink-0" />
+                <span className="text-base">+91 98765 43210</span>
               </li>
-              <li className="flex items-center">
-                <Mail size={20} className="mr-3 text-accent shrink-0" />
-                <span className="text-sm">sales@flowtechengineers.com</span>
+              <li className="flex items-center pt-1">
+                <Mail size={22} className="mr-4 text-accent shrink-0" />
+                <span className="text-base">sales@flowtechengineers.com</span>
               </li>
             </ul>
           </div>
