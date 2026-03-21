@@ -30,12 +30,12 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="fixed w-full bg-white/90 backdrop-blur-lg shadow-sm z-50 border-b border-white/20">
+    <nav className="fixed w-full bg-white shadow-sm z-50 border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-primary text-white p-2 rounded-lg">
+          <Link to="/" className="flex items-center space-x-3">
+            <div className="bg-primary text-white p-2 rounded-sm shrink-0">
               <Droplets size={24} className="text-accent" />
             </div>
             <span className="font-bold text-xl text-primary tracking-tight">
@@ -60,9 +60,9 @@ const Navbar = () => {
             </div>
             <Link
               to="/contact"
-              className="bg-accent hover:bg-orange-600 text-white px-5 py-2 rounded-md font-medium transition-colors duration-200 shadow-sm"
+              className="bg-accent hover:bg-orange-700 text-white px-6 py-2 rounded font-semibold transition-colors duration-200 shadow-sm"
             >
-              Send Enquiry
+              Contact Engineer
             </Link>
           </div>
 
@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Premium Glassmorphism Mobile Nav Overlay */}
+      {/* Solid Engineering Mobile Nav Overlay */}
       <AnimatePresence>
         {isOpen && (
           <motion.div 
@@ -86,7 +86,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="md:hidden absolute top-16 left-0 w-full h-[calc(100vh-64px)] bg-white/98 backdrop-blur-3xl z-40 overflow-y-auto border-t border-slate-100"
+            className="md:hidden absolute top-16 left-0 w-full h-[calc(100vh-64px)] bg-slate-50 z-40 overflow-y-auto border-t border-slate-200"
           >
             <div className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)] p-6 space-y-8">
               {navLinks.map((link, i) => (
@@ -100,10 +100,10 @@ const Navbar = () => {
                   <Link
                     to={link.path}
                     onClick={() => setIsOpen(false)}
-                    className={`block w-full text-center py-4 rounded-2xl text-2xl font-semibold tracking-wide transition-all ${
+                    className={`block w-full text-center py-4 rounded text-xl font-bold uppercase tracking-wide transition-all ${
                       isActive(link.path)
-                        ? 'bg-secondary/10 text-secondary'
-                        : 'text-slate-800 hover:bg-slate-50'
+                        ? 'bg-slate-200 text-primary border-l-4 border-accent'
+                        : 'text-slate-700 hover:bg-slate-200'
                     }`}
                   >
                     {link.name}
@@ -120,9 +120,9 @@ const Navbar = () => {
                 <Link
                   to="/contact"
                   onClick={() => setIsOpen(false)}
-                  className="w-full block text-center bg-gradient-to-r from-accent to-orange-500 shadow-lg shadow-orange-500/30 text-white px-6 py-5 rounded-2xl text-xl font-bold uppercase tracking-wider"
+                  className="w-full block text-center bg-accent text-white px-6 py-4 rounded font-bold uppercase tracking-wider hover:bg-orange-700 transition"
                 >
-                  Request a Quote
+                  Contact Engineer
                 </Link>
               </motion.div>
             </div>

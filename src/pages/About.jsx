@@ -33,7 +33,7 @@ const About = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="w-24 h-1 bg-accent mx-auto rounded-full"
+            className="w-24 h-1.5 bg-accent mx-auto"
           ></motion.div>
         </div>
       </section>
@@ -51,7 +51,7 @@ const About = () => {
             >
               <h2 className="text-3xl font-bold text-primary mb-8 relative inline-block">
                 Company Overview
-                <span className="absolute bottom-0 left-0 w-1/3 h-1 bg-secondary rounded-full transform translate-y-2"></span>
+                <span className="absolute bottom-0 left-0 w-1/3 h-1 bg-secondary transform translate-y-2"></span>
               </h2>
               <p>
                 Founded with a vision to deliver unparalleled precision in industrial measurement, <strong>Flowtech Engineers</strong> has established itself as a cornerstone in the manufacturing and supply of process control instruments.
@@ -70,9 +70,9 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100"
+                className="bg-slate-50 p-8 rounded shadow-sm border border-slate-200"
               >
-                <div className="text-secondary mb-4 bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
+                <div className="text-secondary mb-5 bg-white w-14 h-14 rounded-sm flex items-center justify-center shadow-sm border border-slate-100">
                   <Target size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-3">Our Mission</h3>
@@ -86,9 +86,9 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 mt-0 sm:mt-12"
+                className="bg-slate-50 p-8 rounded shadow-sm border border-slate-200 mt-0 sm:mt-12"
               >
-                <div className="text-accent mb-4 bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
+                <div className="text-accent mb-5 bg-white w-14 h-14 rounded-sm flex items-center justify-center shadow-sm border border-slate-100">
                   <Compass size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-3">Our Vision</h3>
@@ -124,9 +124,9 @@ const About = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="bg-white p-8 rounded-xl shadow-md border hover:border-secondary transition-colors group text-center"
+                className="bg-white p-8 rounded shadow-sm border border-slate-200 hover:border-secondary transition-colors group text-center"
               >
-                <div className="mx-auto w-16 h-16 bg-blue-50 text-secondary rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                <div className="mx-auto w-16 h-16 bg-slate-50 border border-slate-100 text-secondary rounded flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
                   {item.icon}
                 </div>
                 <h3 className="text-lg font-bold text-primary mb-3">{item.title}</h3>

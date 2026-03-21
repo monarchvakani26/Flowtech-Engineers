@@ -10,11 +10,11 @@ const ProductCard = ({ product }) => {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
       whileHover={{ y: -5 }}
-      className="bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border filter drop-shadow-sm border-slate-100/80 group transition-all duration-300"
+      className="bg-white rounded-md shadow-sm hover:shadow-md overflow-hidden border border-slate-200 hover:border-primary group transition-all duration-300 flex flex-col"
     >
-      <div className="relative h-56 sm:h-72 overflow-hidden bg-slate-50">
+      <div className="relative h-56 sm:h-72 overflow-hidden bg-white border-b border-slate-100 p-4">
         <img 
-          src={product.image} 
+          src={product.image[0]} 
           alt={product.name} 
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -31,18 +31,26 @@ const ProductCard = ({ product }) => {
         </div>
       </div>
       
-      <div className="p-6 sm:p-8 flex flex-col h-full">
-        <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3 line-clamp-2 leading-tight">{product.name}</h3>
-        <p className="text-slate-500 text-sm sm:text-base mb-6 line-clamp-2 leading-relaxed flex-grow">
+      <div className="p-5 sm:p-6 flex flex-col flex-grow bg-slate-50/50">
+        <h3 className="text-lg sm:text-xl font-bold text-primary mb-2 line-clamp-2 leading-tight">{product.name}</h3>
+        <p className="text-slate-600 text-sm mb-6 line-clamp-2 leading-relaxed flex-grow">
           {product.description}
         </p>
         
-        <Link 
-          to={`/products/${product.id}`}
-          className="inline-flex items-center justify-center w-full bg-slate-50 hover:bg-gradient-to-r hover:from-primary hover:to-primary/90 text-primary hover:text-white border border-slate-200 hover:border-transparent transition-all duration-300 py-3 rounded-xl font-semibold text-sm sm:text-base uppercase tracking-wide group-hover:shadow-md"
-        >
-          View Technical Details
-        </Link>
+        <div className="flex flex-col gap-2 mt-auto">
+          <Link 
+            to={`/products/${product.id}`}
+            className="inline-flex items-center justify-center w-full bg-primary hover:bg-slate-800 text-white transition-colors duration-300 py-2.5 rounded font-semibold text-sm uppercase tracking-wide"
+          >
+            Get Quotation
+          </Link>
+          <Link 
+            to={`/products/${product.id}`}
+            className="inline-flex items-center justify-center w-full bg-transparent hover:bg-slate-100 text-slate-600 hover:text-primary transition-colors duration-300 py-2 rounded font-medium text-sm border border-slate-200"
+          >
+            Technical Specs
+          </Link>
+        </div>
       </div>
     </motion.div>
   );

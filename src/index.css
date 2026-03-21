@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #0f172a; /* Dark Blue */
-  --secondary: #3b82f6; /* Light Blue */
-  --accent: #f97316; /* Orange */
+  --primary: #0f172a; /* Deep Navy / Charcoal for industrial heavy feel */
+  --secondary: #475569; /* Solid Slate Grey instead of soft blue */
+  --accent: #ea580c; /* Deep Industrial Safety Orange */
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f8fafc;
-  color: #334155;
+  background-color: #f1f5f9; /* Slightly darker grey for technical structured look */
+  color: #1e293b;
 }
 
 @theme {

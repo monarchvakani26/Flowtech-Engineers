@@ -1,182 +1,225 @@
+import acrylicRotameter from '../assets/Flow tech/Acrylic tube rotameter.jpeg';
+import bypassRotameter from '../assets/Flow tech/Bypass rotameter.jpeg';
+import chlorineEvaporator from '../assets/Flow tech/Chlorine evaparotor.jpeg';
+import dwSightGlass1 from '../assets/Flow tech/Double window sight glass.jpeg';
+import dwSightGlass2 from '../assets/Flow tech/Double window sight glass-2.jpeg';
+import flameArrestor from '../assets/Flow tech/Flame arrestor.jpeg';
+import gtrMetalPlastic from '../assets/Flow tech/Glass tube Rotameter Metal + Plastice body.jpeg';
+import gtr1 from '../assets/Flow tech/Glass tube rotameter 1.jpeg';
+import gtr2 from '../assets/Flow tech/Glass tube rotameter 2.jpeg';
+import gtr3 from '../assets/Flow tech/Glass tube rotameter 3.jpeg';
+import lowFlowGtr from '../assets/Flow tech/Low flow glass tube rotameter.jpeg';
+import metalRotameter from '../assets/Flow tech/Metal tube rotameter.jpeg';
+import orificeFlange from '../assets/Flow tech/Orifice flange assembly.jpeg';
+import orificePlate from '../assets/Flow tech/Orifice plate.jpeg';
+import polyRotameter from '../assets/Flow tech/Polycarbonate Rotameter.jpeg';
+import levelInd1 from '../assets/Flow tech/Side mounted level indicator-1.jpeg';
+import levelInd2 from '../assets/Flow tech/Side mounted level indicator-2.jpeg';
+import levelSwitch from '../assets/Flow tech/Side mounted level switch.jpeg';
+
 export const products = [
   {
-    id: "glass-tube-rotameter",
-    name: "Glass Tube Rotameter",
-    image: "https://images.unsplash.com/photo-1574689211272-bc15e219e2fb?auto=format&fit=crop&q=80&w=800",
-    description: "High-precision variable area flow meter for clear liquids and gases.",
+    id: "glass-tube-rotameter-1",
+    name: "Glass Tube Rotameter (Type 1)",
+    image: [gtr1],
+    description: "Standard variable area flow meter for clear liquids and gases with robust casing.",
     features: [
       "Borosilicate glass tube",
-      "Excellent visibility",
       "High accuracy mapping",
       "Easy maintenance and cleaning",
       "Direct reading scale"
     ],
-    applications: [
-      "Chemical processing",
-      "Water treatment plants",
-      "Pharmaceutical manufacturing",
-      "Laboratory testing",
-      "Gas flow measurement"
-    ]
+    applications: ["Chemical processing", "Water treatment plants", "Laboratory testing"]
+  },
+  {
+    id: "glass-tube-rotameter-2",
+    name: "Glass Tube Rotameter (Type 2)",
+    image: [gtr2],
+    description: "Flanged series glass tube rotameter for industrial inline pipelines.",
+    features: [
+      "Heavy duty flanged connections",
+      "Protective metal casing",
+      "High visibility",
+      "Corrosion-resistant wetted parts"
+    ],
+    applications: ["Petrochemical plants", "Pharmaceutical manufacturing", "Gas flow measurement"]
+  },
+  {
+    id: "glass-tube-rotameter-3",
+    name: "Glass Tube Rotameter (Type 3)",
+    image: [gtr3],
+    description: "Threaded connection glass tube rotameter for compact installations.",
+    features: [
+      "Compact design",
+      "Threaded inline mounting",
+      "Clear visibility",
+      "Cost-effective monitoring"
+    ],
+    applications: ["Cooling water systems", "Air sampling", "RO plants"]
+  },
+  {
+    id: "glass-tube-rotameter-metal-plastic",
+    name: "Glass Tube Rotameter (Metal + Plastic Body)",
+    image: [gtrMetalPlastic],
+    description: "Hybrid body variable area flow meter combining metal durability with plastic economy.",
+    features: [
+      "Hybrid casing construction",
+      "Excellent visibility",
+      "Versatile mounting options",
+      "Shatter-resistant protective shield"
+    ],
+    applications: ["Light chemical processing", "General industrial use"]
+  },
+  {
+    id: "low-flow-glass-tube-rotameter",
+    name: "Low Flow Glass Tube Rotameter",
+    image: [lowFlowGtr],
+    description: "Precision flow meter specifically designed for very low flow rate measurement.",
+    features: [
+      "High resolution scale",
+      "Needle valve for precise control",
+      "Compact panel mount design"
+    ],
+    applications: ["Analytical laboratories", "Medical equipment", "Purge panels"]
   },
   {
     id: "acrylic-rotameter",
-    name: "Acrylic Rotameter",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
-    description: "Durable and lightweight acrylic flow meter for liquid and gas applications.",
+    name: "Acrylic Tube Rotameter",
+    image: [acrylicRotameter],
+    description: "Durable and lightweight acrylic flow meter for liquid and air applications.",
     features: [
       "Machined from solid acrylic block",
       "Shatter-proof design",
-      "Clear visibility",
-      "Cost-effective solution",
-      "In-line or panel mounting options"
+      "Direct reading scale",
+      "In-line or panel mounting"
     ],
-    applications: [
-      "RO plants",
-      "Cooling water systems",
-      "Air sampling",
-      "Medical equipment",
-      "Purge panels"
-    ]
+    applications: ["RO plants", "Cooling water", "Air sampling"]
+  },
+  {
+    id: "polycarbonate-rotameter",
+    name: "Polycarbonate Rotameter",
+    image: [polyRotameter],
+    description: "High-impact resistance polycarbonate variable area flow meter.",
+    features: [
+      "Extreme impact resistance",
+      "Lightweight construction",
+      "Clear scale visibility"
+    ],
+    applications: ["Water treatment", "General process lines"]
+  },
+  {
+    id: "bypass-rotameter",
+    name: "Bypass Rotameter",
+    image: [bypassRotameter],
+    description: "Used in conjunction with an orifice plate to measure flow in large pipelines.",
+    features: [
+      "Economical for large line sizes",
+      "Includes carrier ring and orifice",
+      "Easy maintenance"
+    ],
+    applications: ["Main water pipelines", "Cooling towers", "Large industrial mains"]
   },
   {
     id: "metal-tube-rotameter",
     name: "Metal Tube Rotameter",
-    image: "https://images.unsplash.com/photo-1530889260173-19bd942bb42c?auto=format&fit=crop&q=80&w=800",
-    description: "Robust metallic flow meter designed for high pressure and temperature applications.",
+    image: [metalRotameter],
+    description: "Robust metallic flow meter designed for high pressure, high temperature, and opaque fluids.",
     features: [
       "SS316/SS316L construction",
       "High operating pressure and temperature",
       "Magnetic coupling indicator",
-      "Optional electronic transmitter",
-      "flanged or threaded connections"
+      "Flanged connections"
     ],
-    applications: [
-      "Oil & Gas industry",
-      "Petrochemical plants",
-      "Power generation",
-      "High-pressure hydraulics",
-      "Corrosive media measurement"
-    ]
+    applications: ["Oil & Gas industry", "Petrochemical plants", "Corrosive media"]
   },
   {
     id: "orifice-plate",
     name: "Orifice Plate",
-    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800",
+    image: [orificePlate],
     description: "Standardized primary flow element for precise differential pressure measurement.",
     features: [
-      "Concentric, eccentric, or segmental designs",
+      "Concentric design",
       "High-quality stainless steel",
-      "Calculated as per ISO 5167/BS 1042",
-      "Simple installation",
+      "Calculated as per ISO 5167",
       "Long-term stability"
     ],
-    applications: [
-      "Steam flow measurement",
-      "Pipeline monitoring",
-      "Natural gas metering",
-      "Boiler feed water",
-      "HVAC systems"
-    ]
+    applications: ["Steam flow measurement", "Pipeline monitoring", "Natural gas metering"]
   },
   {
     id: "orifice-flange-assembly",
     name: "Orifice Flange Assembly",
-    image: "https://images.unsplash.com/photo-1541888062828-dd6af10c85ee?auto=format&fit=crop&q=80&w=800",
+    image: [orificeFlange],
     description: "Complete assembly including flanges, orifice plate, and pressure tappings.",
     features: [
-      "Includes all necessary hardware (studs, nuts, gaskets)",
-      "Weld neck, slip-on, or threaded options",
-      "Corner, flange, or D-D/2 tappings",
+      "Includes hardware (studs, nuts)",
+      "Weld neck options",
       "High temperature resistance",
       "Rugged industrial build"
     ],
-    applications: [
-      "Refineries",
-      "Chemical plants",
-      "Water distribution networks",
-      "Steam lines",
-      "Process engineering"
-    ]
+    applications: ["Refineries", "Chemical plants", "Steam lines"]
   },
   {
-    id: "level-indicator",
-    name: "Level Indicator",
-    image: "https://images.unsplash.com/photo-1582215286591-9ec0ddebba8f?auto=format&fit=crop&q=80&w=800",
-    description: "Reliable mechanical and magnetic level indicators for tanks and vessels.",
+    id: "side-mounted-level-indicator",
+    name: "Side Mounted Level Indicator",
+    image: [levelInd1, levelInd2],
+    description: "Reliable mechanical indicator for continuous level measurement in tanks.",
     features: [
       "Clear visual indication",
-      "Magnetic or tubular designs",
+      "Magnetic coupling",
       "Leak-proof construction",
-      "Optional level switches",
       "High visibility from distance"
     ],
-    applications: [
-      "Storage tanks",
-      "Boiler drums",
-      "Chemical storage",
-      "Water treatment basins",
-      "Food & Beverage processing"
-    ]
+    applications: ["Storage tanks", "Chemical storage", "Water treatment basins"]
   },
   {
-    id: "site-glass",
-    name: "Site Glass",
-    image: "https://images.unsplash.com/photo-1518774020305-64906f2e817a?auto=format&fit=crop&q=80&w=800",
-    description: "Industrial sight flow indicators for visual inspection of fluid flow.",
+    id: "side-mounted-level-switch",
+    name: "Side Mounted Level Switch",
+    image: [levelSwitch],
+    description: "Float-operated level switch for high/low point alarm and control.",
+    features: [
+      "Microswitch or reed switch mechanisms",
+      "Rugged SS construction",
+      "Reliable point level detection"
+    ],
+    applications: ["Pump control", "Alarm systems", "Boiler automation"]
+  },
+  {
+    id: "double-window-sight-glass",
+    name: "Double Window Sight Glass",
+    image: [dwSightGlass1, dwSightGlass2],
+    description: "Industrial sight flow indicators for visual inspection of fluid flow line.",
     features: [
       "Toughened borosilicate glass",
-      "Double window design",
-      "Optional flapper or rotary spinner",
+      "Double view window",
       "High pressure ratings",
-      "Easy inline installation"
+      "Easy inline flanged installation"
     ],
-    applications: [
-      "Lube oil systems",
-      "Cooling lines",
-      "Chemical process lines",
-      "Pharmaceutical manufacturing",
-      "Brewery pipelines"
-    ]
+    applications: ["Lube oil systems", "Cooling lines", "Chemical process lines"]
   },
   {
-    id: "pitot-tube",
-    name: "Pitot Tube",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
-    description: "Averaging pitot tubes for accurate gas and air flow measurement in ducts.",
+    id: "flame-arrestor",
+    name: "Flame Arrestor",
+    image: [flameArrestor],
+    description: "Safety device designed to stop the propagation of a flame front in pipelines.",
     features: [
+      "Crimped metal ribbon element",
       "Low pressure drop",
-      "Easy installation in existing ducts",
-      "Averaging design for better accuracy",
-      "Available in various lengths",
-      "Compatible with DP transmitters"
+      "High deflagration protection",
+      "Robust housing"
     ],
-    applications: [
-      "HVAC duct air flow",
-      "Stack gas monitoring",
-      "Combustion air measurement",
-      "Exhaust gas flow",
-      "Ventilation systems"
-    ]
+    applications: ["Storage tank vents", "Biogas flare lines", "Petrochemical exhaust"]
   },
   {
-    id: "chlorination-system",
-    name: "Chlorination System",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=800",
-    description: "Complete vacuum type gas chlorination system for water purification.",
+    id: "chlorine-evaporator",
+    name: "Chlorine Evaporator",
+    image: [chlorineEvaporator],
+    description: "Industrial unit designed to safely vaporize liquid chlorine for water treatment systems.",
     features: [
-      "Safe vacuum operation",
-      "Accurate dosage control",
-      "Corrosion-resistant materials",
-      "Wall or cylinder mounted options",
-      "Low maintenance design"
+      "Safe indirect heating",
+      "Precise temperature control",
+      "Corrosion-resistant chamber",
+      "Heavy-duty industrial build"
     ],
-    applications: [
-      "Municipal water treatment",
-      "Swimming pool sanitation",
-      "Sewage treatment",
-      "Industrial effluent treatment",
-      "Cooling tower water treatment"
-    ]
+    applications: ["Municipal water treatment", "Large scale disinfection", "Chemical plants"]
   }
 ];

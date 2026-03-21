@@ -11,11 +11,8 @@ const Products = () => {
         description="Explore our complete catalog of precision flow measurement instruments including Rotameters, Chlorination Systems, and Orifice Plates." 
       />
       {/* Header Banner */}
-      <section className="bg-primary/95 py-20 px-4 relative overflow-hidden border-b-4 border-accent">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full blur-[100px] transform translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent rounded-full blur-[100px] transform -translate-x-1/2 translate-y-1/2"></div>
-        </div>
+      <section className="bg-primary pt-24 pb-16 px-4 relative border-b-4 border-accent">
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
         
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <motion.div
@@ -23,7 +20,7 @@ const Products = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-white/10 text-secondary font-medium tracking-wider text-sm mb-4 border border-white/10 uppercase">
+            <span className="inline-block py-1.5 px-4 bg-white/10 text-slate-200 font-bold tracking-widest text-sm mb-4 border border-white/20 uppercase rounded-sm">
               Our Catalog
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -56,15 +53,15 @@ const Products = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-24 bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-slate-100 flex flex-col md:flex-row items-center justify-between"
+          className="mt-20 bg-slate-100 p-8 md:p-12 rounded shadow-sm border border-slate-200 flex flex-col md:flex-row items-center justify-between"
         >
           <div className="mb-6 md:mb-0 md:mr-8 text-center md:text-left">
-            <h3 className="text-2xl font-bold text-primary mb-2">Need a Custom Solution?</h3>
-            <p className="text-slate-600">Our engineering team can tailor instruments to your exact process specs.</p>
+            <h3 className="text-2xl font-bold text-primary mb-2">Need a Custom Engineering Solution?</h3>
+            <p className="text-slate-600">Our technical team can tailor flow measurement instruments to your exact process specifications.</p>
           </div>
           <a
             href="/contact"
-            className="px-8 py-4 bg-accent hover:bg-orange-600 text-white rounded-lg font-bold transition-all shadow-md transform hover:-translate-y-1 whitespace-nowrap"
+            className="px-8 py-4 bg-primary hover:bg-slate-800 text-white rounded font-bold uppercase tracking-wide transition-colors shadow-sm flex-shrink-0"
           >
             Contact Engineering
           </a>

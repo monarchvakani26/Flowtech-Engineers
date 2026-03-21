@@ -32,12 +32,9 @@ const Home = () => {
       />
       {/* Hero Section */}
       <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center bg-primary overflow-hidden">
-        {/* Abstract Background Design */}
-        <div className="absolute inset-0 w-full h-full opacity-20">
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-secondary/40 to-transparent transform -skew-x-12"></div>
-          <div className="absolute bottom-0 left-0 w-3/4 h-1/2 bg-gradient-to-t from-accent/20 to-transparent"></div>
-          {/* Subtle grid pattern */}
-          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
+        {/* Industrial Engineering Background */}
+        <div className="absolute inset-0 w-full h-full opacity-30">
+          <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(#475569 1px, transparent 1px), linear-gradient(90deg, #475569 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
@@ -47,27 +44,27 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto flex flex-col items-center"
           >
-            <span className="inline-block py-1.5 px-4 rounded-full bg-white/10 text-accent font-semibold tracking-wider text-xs sm:text-sm mb-6 sm:mb-8 border border-white/10 backdrop-blur-md shadow-lg">
+            <span className="inline-block py-1.5 px-4 bg-accent text-white font-bold tracking-widest text-xs sm:text-sm mb-6 sm:mb-8 border border-accent uppercase rounded-sm">
               INDUSTRIAL INSTRUMENTATION EXPERTS
             </span>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-6 sm:mb-8 leading-[1.1] tracking-tight drop-shadow-lg">
-              Precision <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400 drop-shadow-sm">Flow<br className="sm:hidden" /> Measurement</span> Solutions
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-6 sm:mb-8 leading-[1.1] tracking-tight">
+              Precision Flow Measurement Solutions
             </h1>
-            <p className="text-lg sm:text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md px-4">
+            <p className="text-lg sm:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed px-4">
               High quality flow measurement instruments designed for demanding industrial applications. Engineered for accuracy, built for durability.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full sm:w-auto px-4">
               <Link
                 to="/products"
-                className="w-full sm:w-auto px-8 py-4 sm:py-5 bg-gradient-to-r from-secondary to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white rounded-xl font-bold text-lg transition-all duration-300 shadow-xl shadow-secondary/30 transform hover:-translate-y-1"
+                className="w-full sm:w-auto px-8 py-4 sm:py-5 bg-secondary hover:bg-slate-600 text-white rounded font-bold text-lg transition-all duration-300 uppercase tracking-wide"
               >
                 View Catalog
               </Link>
               <Link
                 to="/contact"
-                className="w-full sm:w-auto px-8 py-4 sm:py-5 bg-white/10 hover:bg-white/20 text-white border-2 border-white/20 rounded-xl font-bold text-lg transition-all duration-300 backdrop-blur-md transform hover:-translate-y-1"
+                className="w-full sm:w-auto px-8 py-4 sm:py-5 bg-transparent hover:bg-white/10 text-white border-2 border-slate-400 rounded font-bold text-lg transition-all duration-300 uppercase tracking-wide"
               >
-                Request Quote
+                Get Quotation
               </Link>
             </div>
           </motion.div>
@@ -128,20 +125,20 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-secondary/20 rounded-2xl transform rotate-3 scale-105 -z-10"></div>
+              <div className="absolute inset-0 bg-primary/5 rounded border border-slate-200 transform translate-x-4 translate-y-4 -z-10"></div>
               <img 
                 src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&q=80&w=1000" 
                 alt="Industrial facility showing Flowtech Engineer's environment" 
-                className="rounded-2xl shadow-xl w-full h-[500px] object-cover"
+                className="rounded border border-slate-200 shadow-md w-full h-[500px] object-cover"
               />
-              {/* Floating Stat Badge */}
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-slate-100 flex items-center space-x-4">
-                <div className="bg-primary/5 p-3 rounded-full text-primary">
+              {/* Trust Badge */}
+              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded shadow-lg border border-slate-200 flex items-center space-x-4">
+                <div className="bg-primary p-3 rounded text-white">
                   <Award size={32} />
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-primary">ISO</p>
-                  <p className="text-sm text-slate-500 font-medium">9001:2015 Certified</p>
+                  <p className="text-2xl font-black text-primary uppercase tracking-tight">ISO 9001:2015</p>
+                  <p className="text-sm text-slate-500 uppercase tracking-wider font-bold">Certified Company</p>
                 </div>
               </div>
             </motion.div>
@@ -189,7 +186,7 @@ const Home = () => {
           <div className="text-center">
             <Link
               to="/products"
-              className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-slate-800 text-white rounded-lg font-semibold text-lg transition-all shadow-md hover:shadow-lg"
+              className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-slate-800 text-white rounded font-bold text-lg uppercase tracking-wide transition-colors"
             >
               View All Products
             </Link>
@@ -307,9 +304,9 @@ const Home = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-10 py-5 bg-accent hover:bg-orange-600 text-white rounded-lg font-bold text-xl transition-all duration-300 shadow-xl shadow-accent/40 transform hover:-translate-y-1"
+              className="inline-flex items-center justify-center px-10 py-5 bg-accent hover:bg-orange-700 text-white rounded font-bold text-xl uppercase tracking-wide transition-colors"
             >
-              Request a Quote
+              Contact Engineering Team
             </Link>
           </motion.div>
         </div>
