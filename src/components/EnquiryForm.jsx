@@ -99,7 +99,7 @@ const EnquiryForm = ({ prefilledProduct = '' }) => {
               value={formData.name}
               onChange={handleChange}
               className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-secondary focus:border-secondary outline-none transition-colors"
-              placeholder="John Doe"
+              placeholder="Name"
             />
           </div>
           <div>
@@ -112,7 +112,7 @@ const EnquiryForm = ({ prefilledProduct = '' }) => {
               value={formData.email}
               onChange={handleChange}
               className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-secondary focus:border-secondary outline-none transition-colors"
-              placeholder="john@example.com"
+              placeholder="Email ID"
             />
           </div>
         </div>
@@ -128,7 +128,7 @@ const EnquiryForm = ({ prefilledProduct = '' }) => {
               value={formData.phone}
               onChange={handleChange}
               className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-secondary focus:border-secondary outline-none transition-colors"
-              placeholder="+91 98765 43210"
+              placeholder="Contact Number"
             />
           </div>
           <div>
@@ -140,7 +140,7 @@ const EnquiryForm = ({ prefilledProduct = '' }) => {
               value={formData.company}
               onChange={handleChange}
               className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-secondary focus:border-secondary outline-none transition-colors"
-              placeholder="ABC Industries"
+              placeholder="Company Name"
             />
           </div>
         </div>
