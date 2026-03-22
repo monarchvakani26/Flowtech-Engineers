@@ -6,31 +6,9 @@ const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Rohit Sharma",
-      role: "Founder & Director",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800",
-      description: "Visionary leader with 25+ years shaping Flowtech's industrial strategy."
-    },
-    {
-      id: 2,
-      name: "Meera Reddy",
-      role: "Technical Head",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
-      description: "Chief engineering architect overseeing instrument calibration and design."
-    },
-    {
-      id: 3,
-      name: "Amit Patel",
-      role: "Operations Manager",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800",
-      description: "Ensures seamless manufacturing processes and supply chain logic."
-    },
-    {
-      id: 4,
-      name: "Priya Desai",
-      role: "Sales Manager",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800",
-      description: "Drives client relations and international business expansion."
+      name: "Vaibhav Teredesai",
+      role: "Founder and Director",
+      description: "Leading Flowtech Engineers with a vision for industrial excellence and innovation."
     }
   ];
 
@@ -66,37 +44,32 @@ const Team = () => {
 
       {/* Team Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 pb-24 relative z-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-md mx-auto">
           {teamMembers.map((member, idx) => (
             <motion.div
               key={member.id}
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300"
+              className="bg-white rounded-2xl shadow-xl overflow-hidden p-8 hover:shadow-2xl transition-all duration-300 text-center border-t-4 border-accent"
             >
-              <div className="relative h-80 overflow-hidden">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700" 
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6 space-x-4">
-                  <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-colors transform hover:-translate-y-1">
-                    <Linkedin size={20} />
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-colors transform hover:-translate-y-1">
-                    <Mail size={20} />
-                  </a>
-                </div>
+              <div className="w-20 h-20 bg-primary/5 rounded-full mx-auto flex items-center justify-center mb-6 text-primary border-2 border-primary/10">
+                <span className="text-3xl font-bold">{member.name.charAt(0)}</span>
               </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-primary mb-1">{member.name}</h3>
-                <p className="text-secondary font-medium text-sm mb-4 uppercase tracking-wider">{member.role}</p>
-                <div className="w-12 h-1 bg-slate-200 mx-auto mb-4 rounded-full"></div>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  {member.description}
-                </p>
+              <h3 className="text-2xl font-bold text-primary mb-2">{member.name}</h3>
+              <p className="text-secondary font-medium text-base mb-6 tracking-wide">{member.role}</p>
+              <div className="w-16 h-1 bg-slate-200 mx-auto mb-6 rounded-full"></div>
+              <p className="text-slate-600 text-base leading-relaxed mb-8">
+                {member.description}
+              </p>
+              
+              <div className="flex items-center justify-center space-x-4">
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-500 hover:bg-secondary hover:text-white hover:border-secondary transition-colors">
+                  <Linkedin size={18} />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-500 hover:bg-secondary hover:text-white hover:border-secondary transition-colors">
+                  <Mail size={18} />
+                </a>
               </div>
             </motion.div>
           ))}

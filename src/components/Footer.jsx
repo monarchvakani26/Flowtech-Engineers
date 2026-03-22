@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-primary text-slate-300 pt-16 pb-8 border-t-4 border-accent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          
+
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2 mb-4">
@@ -36,7 +36,7 @@ const Footer = () => {
             <ul className="space-y-4">
               {['Home', 'About', 'Products', 'Team', 'Contact'].map((item) => (
                 <li key={item}>
-                  <Link 
+                  <Link
                     to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                     className="flex items-center text-base py-1 hover:text-secondary hover:translate-x-1 transition-all duration-200"
                   >
@@ -57,7 +57,7 @@ const Footer = () => {
             <ul className="space-y-4">
               {quickProducts.map((product) => (
                 <li key={product.id}>
-                  <Link 
+                  <Link
                     to={`/products/${product.id}`}
                     className="flex items-center text-base py-1 hover:text-secondary hover:translate-x-1 transition-all duration-200 line-clamp-1"
                   >
@@ -78,15 +78,15 @@ const Footer = () => {
             <ul className="space-y-5">
               <li className="flex items-start">
                 <MapPin size={22} className="mr-4 text-accent shrink-0 mt-0.5" />
-                <span className="text-base leading-relaxed">123 Industrial Estate, Phase 1, GIDC, Mumbai - 400001, India</span>
+                <span className="text-base leading-relaxed">105, Krushna Laxmi industrial premises, Vartak nagar Thane, Mumbai - 400606, Maharashtra, India</span>
               </li>
               <li className="flex items-center pt-1">
                 <Phone size={22} className="mr-4 text-accent shrink-0" />
-                <span className="text-base">+91 98765 43210</span>
+                <span className="text-base">+91 99201 31677</span>
               </li>
               <li className="flex items-center pt-1">
                 <Mail size={22} className="mr-4 text-accent shrink-0" />
-                <span className="text-base">sales@flowtechengineers.com</span>
+                <span className="text-base">flowtechengineers.mumbai@gmail.com</span>
               </li>
             </ul>
           </div>
