@@ -193,6 +193,18 @@ const ProductDetails = () => {
                   </ul>
                 </div>
               </div>
+
+              {product.usageHighlights && (
+                <div className="bg-white p-6 md:p-8 rounded shadow-sm border border-slate-200 mb-8">
+                  <h3 className="text-lg font-bold text-primary mb-4 border-b border-slate-100 pb-2 flex items-center">
+                    <FileText className="mr-2 text-secondary" size={20} />
+                    Usage & Highlights
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed text-base md:text-lg">
+                    {product.usageHighlights}
+                  </p>
+                </div>
+              )}
               
               {/* Form Section */}
               <div id="enquiry-form" className="bg-white p-1 rounded shadow-sm border border-slate-200 pt-8 mt-12">

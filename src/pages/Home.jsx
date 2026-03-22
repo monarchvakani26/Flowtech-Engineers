@@ -104,8 +104,17 @@ const Home = () => {
                   Flowtech Engineers is a premier manufacturer and supplier of high-precision flow measurement instruments. With years of engineering excellence, we deliver robust solutions that meet the demanding needs of modern process industries.
                 </p>
                 <p>
-                  Our comprehensive range of products, from Glass Tube Rotameters to comprehensive Chlorination Systems, are manufactured using industrial-grade materials to ensure long-term reliability and precise monitoring capabilities.
+                  Our comprehensive range of products, from Glass Tube Rotameters to complete Chlorination Systems, are manufactured using industrial-grade materials to ensure long-term reliability and precise monitoring capabilities.
                 </p>
+                <div className="pt-2">
+                  <h4 className="font-bold text-primary mb-2">Additional Highlights:</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-center"><CheckCircle size={18} className="text-secondary mr-2 shrink-0"/> Strong focus on quality control and calibration</li>
+                    <li className="flex items-center"><CheckCircle size={18} className="text-secondary mr-2 shrink-0"/> Custom-built solutions for specialized industrial requirements</li>
+                    <li className="flex items-center"><CheckCircle size={18} className="text-secondary mr-2 shrink-0"/> Dedicated engineering support team</li>
+                    <li className="flex items-center"><CheckCircle size={18} className="text-secondary mr-2 shrink-0"/> Fast response and service support</li>
+                  </ul>
+                </div>
               </div>
               <Link
                 to="/about"
@@ -252,12 +261,12 @@ const Home = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
-              { icon: <Droplets size={32} />, name: "Chemical" },
-              { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>, name: "Water Treatment" },
-              { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>, name: "Oil & Gas" }, // Using chemistry flask as proxy for Oil/Gas
+              { icon: <Droplets size={32} />, name: "Chemical Industry" },
+              { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>, name: "Water Treatment Plants" },
+              { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>, name: "Oil & Gas" },
               { icon: <Zap size={32} />, name: "Power Plants" },
-              { icon: <Factory size={32} />, name: "Manufacturing" },
-              { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>, name: "Pharma" } // Proxy for Pharma
+              { icon: <Factory size={32} />, name: "Manufacturing Units" },
+              { icon: <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>, name: "Pharmaceutical Industry" }
             ].map((industry, idx) => (
               <motion.div 
                 key={idx}
@@ -299,9 +308,15 @@ const Home = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Need Flow Measurement Solutions?</h2>
-            <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-              Contact our engineering team today. We provide expert guidance to help you select the precise instruments for your specific application requirements.
-            </p>
+            <div className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto space-y-4">
+              <p>Contact our engineering team for:</p>
+              <ul className="text-left inline-block space-y-2">
+                <li className="flex items-center"><CheckCircle size={20} className="text-accent mr-3" /> Product selection guidance</li>
+                <li className="flex items-center"><CheckCircle size={20} className="text-accent mr-3" /> Custom design consultation</li>
+                <li className="flex items-center"><CheckCircle size={20} className="text-accent mr-3" /> Technical support</li>
+                <li className="flex items-center"><CheckCircle size={20} className="text-accent mr-3" /> Quotation and project discussion</li>
+              </ul>
+            </div>
             <Link
               to="/contact"
               className="inline-flex items-center justify-center px-10 py-5 bg-accent hover:bg-orange-700 text-white rounded font-bold text-xl uppercase tracking-wide transition-colors"

@@ -43,204 +43,368 @@ export const products = [
     id: "glass-tube-rotameter-1",
     name: "Glass Tube Rotameter (Type 1)",
     image: [gtr1, gtr1Png],
-    description: "Standard variable area flow meter for clear liquids and gases with robust casing.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Borosilicate glass tube",
-      "High accuracy mapping",
-      "Easy maintenance and cleaning",
-      "Direct reading scale"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Chemical processing", "Water treatment plants", "Laboratory testing"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "glass-tube-rotameter-2",
     name: "Glass Tube Rotameter (Type 2)",
     image: [gtr2],
-    description: "Flanged series glass tube rotameter for industrial inline pipelines.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Heavy duty flanged connections",
-      "Protective metal casing",
-      "High visibility",
-      "Corrosion-resistant wetted parts"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Petrochemical plants", "Pharmaceutical manufacturing", "Gas flow measurement"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "glass-tube-rotameter-3",
     name: "Glass Tube Rotameter (Type 3)",
     image: [gtr3, gtr3Png1, gtr3Png2],
-    description: "Threaded connection glass tube rotameter for compact installations.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Compact design",
-      "Threaded inline mounting",
-      "Clear visibility",
-      "Cost-effective monitoring"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Cooling water systems", "Air sampling", "RO plants"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "glass-tube-rotameter-metal-plastic",
     name: "Glass Tube Rotameter (Metal + Plastic Body)",
     image: [gtrMetalPlastic, gtrMetalPlasticPng],
-    description: "Hybrid body variable area flow meter combining metal durability with plastic economy.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Hybrid casing construction",
-      "Excellent visibility",
-      "Versatile mounting options",
-      "Shatter-resistant protective shield"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Light chemical processing", "General industrial use"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "low-flow-glass-tube-rotameter",
     name: "Low Flow Glass Tube Rotameter",
     image: [lowFlowGtr, lowFlowGtrPng1, lowFlowGtrPng2, lowFlowGtrPng3, lowFlowGtrPng4],
-    description: "Precision flow meter specifically designed for very low flow rate measurement.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "High resolution scale",
-      "Needle valve for precise control",
-      "Compact panel mount design"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Analytical laboratories", "Medical equipment", "Purge panels"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "acrylic-rotameter",
     name: "Acrylic Tube Rotameter",
     image: [acrylicRotameter, acrylicRotameterPng1, acrylicRotameterPng2, acrylicRotameterPng3],
-    description: "Durable and lightweight acrylic flow meter for liquid and air applications.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Machined from solid acrylic block",
-      "Shatter-proof design",
-      "Direct reading scale",
-      "In-line or panel mounting"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["RO plants", "Cooling water", "Air sampling"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "polycarbonate-rotameter",
     name: "Polycarbonate Rotameter",
     image: [polyRotameter],
-    description: "High-impact resistance polycarbonate variable area flow meter.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Extreme impact resistance",
-      "Lightweight construction",
-      "Clear scale visibility"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Water treatment", "General process lines"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "bypass-rotameter",
     name: "Bypass Rotameter",
     image: [bypassRotameter, bypassRotameterPng1, bypassRotameterPng2, bypassRotameterPng3],
-    description: "Used in conjunction with an orifice plate to measure flow in large pipelines.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Economical for large line sizes",
-      "Includes carrier ring and orifice",
-      "Easy maintenance"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Main water pipelines", "Cooling towers", "Large industrial mains"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "metal-tube-rotameter",
     name: "Metal Tube Rotameter",
     image: [metalRotameter, metalRotameterPng1, metalRotameterPng2, metalRotameterPng3, metalRotameterPng4],
-    description: "Robust metallic flow meter designed for high pressure, high temperature, and opaque fluids.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "SS316/SS316L construction",
-      "High operating pressure and temperature",
-      "Magnetic coupling indicator",
-      "Flanged connections"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Oil & Gas industry", "Petrochemical plants", "Corrosive media"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "orifice-plate",
     name: "Orifice Plate",
     image: [orificePlate, orificePlatePng],
-    description: "Standardized primary flow element for precise differential pressure measurement.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Concentric design",
-      "High-quality stainless steel",
-      "Calculated as per ISO 5167",
-      "Long-term stability"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Steam flow measurement", "Pipeline monitoring", "Natural gas metering"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "orifice-flange-assembly",
     name: "Orifice Flange Assembly",
     image: [orificeFlange],
-    description: "Complete assembly including flanges, orifice plate, and pressure tappings.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Includes hardware (studs, nuts)",
-      "Weld neck options",
-      "High temperature resistance",
-      "Rugged industrial build"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Refineries", "Chemical plants", "Steam lines"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "side-mounted-level-indicator",
     name: "Side Mounted Level Indicator",
     image: [levelInd1, levelInd2],
-    description: "Reliable mechanical indicator for continuous level measurement in tanks.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Clear visual indication",
-      "Magnetic coupling",
-      "Leak-proof construction",
-      "High visibility from distance"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Storage tanks", "Chemical storage", "Water treatment basins"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "side-mounted-level-switch",
     name: "Side Mounted Level Switch",
     image: [levelSwitch],
-    description: "Float-operated level switch for high/low point alarm and control.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Microswitch or reed switch mechanisms",
-      "Rugged SS construction",
-      "Reliable point level detection"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Pump control", "Alarm systems", "Boiler automation"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "double-window-sight-glass",
     name: "Double Window Sight Glass",
     image: [dwSightGlass1, dwSightGlass2, dwSightGlassPng1, dwSightGlassPng2],
-    description: "Industrial sight flow indicators for visual inspection of fluid flow line.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Toughened borosilicate glass",
-      "Double view window",
-      "High pressure ratings",
-      "Easy inline flanged installation"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Lube oil systems", "Cooling lines", "Chemical process lines"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "flame-arrestor",
     name: "Flame Arrestor",
     image: [flameArrestor],
-    description: "Safety device designed to stop the propagation of a flame front in pipelines.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Crimped metal ribbon element",
-      "Low pressure drop",
-      "High deflagration protection",
-      "Robust housing"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Storage tank vents", "Biogas flare lines", "Petrochemical exhaust"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   },
   {
     id: "chlorine-evaporator",
     name: "Chlorine Evaporator",
     image: [chlorineEvaporator],
-    description: "Industrial unit designed to safely vaporize liquid chlorine for water treatment systems.",
+    description: "This product is engineered for industrial-grade performance, ensuring accurate measurement and reliability under varying process conditions. Designed with robust materials and precision manufacturing, it supports long-term operation in demanding environments such as chemical plants, water treatment facilities, and process industries.",
     features: [
-      "Safe indirect heating",
-      "Precise temperature control",
-      "Corrosion-resistant chamber",
-      "Heavy-duty industrial build"
+      "High measurement accuracy and repeatability",
+      "Corrosion-resistant materials",
+      "Suitable for liquids and gases",
+      "Wide operating pressure and temperature range",
+      "Easy installation and maintenance",
+      "Clear and direct reading scale"
     ],
-    applications: ["Municipal water treatment", "Large scale disinfection", "Chemical plants"]
+    applications: [
+      "Chemical and petrochemical industries",
+      "Water and wastewater treatment plants",
+      "Oil & gas processing",
+      "Pharmaceutical manufacturing",
+      "Food and beverage processing",
+      "Power generation systems"
+    ],
+    usageHighlights: "Primarily used for monitoring and controlling flow or process conditions in industrial systems. Known for its reliability, ease of operation, and long service life. Ideal for continuous process monitoring where accuracy and durability are critical."
   }
 ];
